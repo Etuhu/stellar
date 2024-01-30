@@ -1,0 +1,22 @@
+.index-service-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @media (max-width: 1920px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    > .container {
+        max-width: 100%;
+    }
+    .index-card--pic {
+        h4 {
+            top: unset;
+            bottom: 35px;
+        }
+        .content-image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

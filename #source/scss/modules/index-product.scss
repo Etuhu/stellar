@@ -1,0 +1,111 @@
+.index-product {
+    .index-product-info {
+        position: relative;
+        margin-top: -720px;
+        padding-top: 450px;
+        background-image: url(../img/mountains_bg.png), url(../img/product-index-lines.png);
+        background-repeat: no-repeat;
+        background-position: bottom center, top center;
+        background-size: auto;
+        height: 1500px;
+        @media (max-width: 1920px) {
+            margin-top: -640px;
+            height: 1450px;
+        }
+        .index-product-model {
+            margin-top: 3rem;
+            letter-spacing: 1.2px;
+            .model-name {
+                font-size: 2.7rem;
+                font-weight: 300;
+                line-height: 1;
+                text-transform: uppercase;
+                b {
+                    font-weight: 700;
+                }
+            }
+        }
+        .index-product-image {
+            margin-top: 2rem;
+            text-align: center;
+            @media (max-width: 1920px) {
+                margin-top: 4rem;
+            }
+            > img {
+                @media (max-width: 1920px) {
+                    width: 80%;
+                }
+            }
+        }
+        .index-product-bottom-row {
+            position: absolute;
+            right: 0;
+            bottom: 600px;
+            width: 100%;
+            @media (max-width: 1920px) {
+                bottom: 370px;
+            }
+        }
+        .index-product-features {
+            ul {
+                padding-left: 1rem;
+            }
+            .basic-button {
+                width: 250px;
+                height: 100px;
+                @media (max-width: 1920px) {
+                    width: 220px;
+                    height: 80px;
+                }
+            }
+        }
+
+    }
+    .index-product-params {
+        background-image: linear-gradient(0deg, #202122 18.39%, #2F373F 100%);
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+        color: $white;
+        .index-product-params-title {
+            width: fit-content;
+            font-family: "Manrope", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            border-bottom: 4px solid $red;
+            padding-bottom: 7px;
+        }
+        .index-product-params-tables {
+            margin-top: 2rem;
+            .params-table-title {
+                display: block;
+                width: fit-content;
+                color: $white;
+                font-family: "Manrope", sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 1rem;
+                pointer-events: none;
+            }
+            .params-table {
+                border-collapse: separate;
+                border-spacing: 20px 15px;
+                margin-left: -20px;
+                @media (max-width: 1920px) {
+                    border-spacing: 15px;
+                }
+                td {
+                    padding: 10px 15px;
+                    border: 1px solid #7A7C80;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    @media (max-width: 1920px) {
+                        font-size: 0.8rem;
+                        padding: 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.index-catalog-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    @media (max-width: 1920px) {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    > .container {
+        max-width: 100%;
+    }
+    .index-card--pic {
+        h4 {
+            color: $white;
+        }
+    }
+}
