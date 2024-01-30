@@ -1,4 +1,7 @@
 .index-about {
+    @media (max-width: 767px) {
+        padding-top: 35px;
+    }
     .index-about-description {
         b {
             font-weight: 700;
@@ -11,6 +14,16 @@
     @media (max-width: 1920px) {
         margin-top: 3rem;
     }
+    @media (max-width: 1399px) {
+        margin-top: 2rem;
+    }
+    > .container {
+        @media (max-width: 1399px) {
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     .features-item {
         height: auto;
         .content {
@@ -21,6 +34,12 @@
             background: linear-gradient(0deg, #202122 18.39%, #2F373F 100%);
             @media (max-width: 1920px) {
                 padding: 20px 30px 45px;
+            }
+            @media (max-width: 1499px) {
+                padding: 20px 20px 30px;
+            }
+            @media (max-width: 1299px) {
+                padding: 20px 15px 30px;
             }
             .counter {
                 font-size: 4.5rem;
@@ -41,6 +60,9 @@
                     font-size: 1.3rem;
                     margin-bottom: 30px;
                 }
+                @media (max-width: 1799px) {
+                    font-size: 1.1rem;
+                }
             }
             .features-item-preview {
                 font-size: 0.85rem;
@@ -54,6 +76,21 @@
     margin-top: -335px;
     @media (max-width: 1920px) {
         margin-top: -305px;
+    }
+    @media (max-width: 1499px) {
+        margin-top: -225px;
+    }
+    @media (max-width: 1399px) {
+        margin-top: -165px;
+    }
+    @media (max-width: 1199px) {
+        margin-top: -180px;
+    }
+    @media (max-width: 991px) {
+        margin-top: -160px;
+    }
+    @media (max-width: 575px) {
+        margin-top: -50px;
     }
 }
 

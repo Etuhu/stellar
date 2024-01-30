@@ -45,31 +45,41 @@ let indexSliderParams = {
 		  slidesOffsetBefore: 10
 		},
 		450: {
-          slidesPerView: 2.4,
+          slidesPerView: 2,
 		  slidesPerGroup: 1,
 		  spaceBetween: 10,
 		  slidesOffsetBefore: 10
 		},
 		576: {
-			slidesPerView: 3.3,
+			slidesPerView: 2.3,
 			spaceBetween: 15,
-			slidesOffsetBefore: 200
+			slidesOffsetBefore: 124
 		},
 		768: {
-		  slidesPerView: 3.5,
+		  slidesPerView: 3.1,
 		  spaceBetween: 15,
-		  slidesOffsetBefore: 250
+		  slidesOffsetBefore: 43
+		},
+		800: {
+		  slidesPerView: 3.1,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 139
 		},
 		992: {
 		  slidesPerView: 3.6,
 		  spaceBetween: 15,
-		  slidesOffsetBefore: 300
+		  slidesOffsetBefore: 73
+		},
+		1100: {
+		  slidesPerView: 3.6,
+		  spaceBetween: 15,
+		  slidesOffsetBefore: 123
 		},
 		1200: {
           slidesPerView: 3.7,
 		  slidesPerGroup: 1,
 		  spaceBetween: 30,
-		  slidesOffsetBefore: 300
+		  slidesOffsetBefore: 150
 		},
 		1400: {
 		  slidesPerView: 4,
@@ -94,9 +104,20 @@ let indexSliderParams = {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	const width = window.innerWidth
-	if (width < 1399){
+	const width = window.innerWidth;
+	if (width < 1400){
 		new Swiper(".features-swiper", indexSliderParams);
+	}
+	let collapseTitles = document.querySelectorAll(".params-table-wrapper .collapse");
+	if (width < 992) {
+		collapseTitles.forEach(function (title, index) {
+			if (index > 0) {
+				new bootstrap.Collapse(title, {
+					hide: true,
+				});
+			}
+		});
+
 	}
   })
 // new Swiper(".features-swiper", indexSliderParams);

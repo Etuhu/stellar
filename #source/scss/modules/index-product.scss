@@ -1,4 +1,5 @@
 .index-product {
+    overflow: hidden;
     .index-product-info {
         position: relative;
         margin-top: -720px;
@@ -12,14 +13,46 @@
             margin-top: -640px;
             height: 1450px;
         }
+        @media (max-width: 1699px) {
+            height: 1250px;
+        }
+        @media (max-width: 1499px) {
+            margin-top: -580px;
+        }
+        @media (max-width: 1399px) {
+            margin-top: -550px;
+            height: 1200px;
+        }
+        @media (max-width: 1199px) {
+            margin-top: -530px;
+            height: 1150px;
+        }
+        @media (max-width: 991px) {
+            margin-top: -500px;
+            height: 1100px;
+        }
+        @media (max-width: 767px) {
+            margin-top: -470px;
+            height: 1050px;
+        }
+        @media (max-width: 575px) {
+            margin-top: -450px;
+            height: 1200px;
+        }
         .index-product-model {
             margin-top: 3rem;
             letter-spacing: 1.2px;
+            @media (max-width: 991px) {
+                margin-top: 2rem;
+            }
             .model-name {
                 font-size: 2.7rem;
                 font-weight: 300;
                 line-height: 1;
                 text-transform: uppercase;
+	            @media (max-width: 575px) {
+                    font-size: 1.8rem;
+                }
                 b {
                     font-weight: 700;
                 }
@@ -31,9 +64,31 @@
             @media (max-width: 1920px) {
                 margin-top: 4rem;
             }
+            @media (max-width: 1399px) {
+                margin-top: 7rem;
+            }
+            @media (max-width: 991px) {
+                margin-top: 10rem;
+                position: absolute;
+                right: -50%;
+                z-index: 10;
+            }
+            @media (max-width: 575px) {
+                margin-top: 20rem;
+                right: -40%;
+            }
+            @media (max-width: 499px) {
+                margin-top: 27rem;
+            }
             > img {
                 @media (max-width: 1920px) {
                     width: 80%;
+                }
+                @media (max-width: 991px) {
+                    width: 50%;
+                }
+                @media (max-width: 575px) {
+                    width: 75%;
                 }
             }
         }
@@ -45,10 +100,26 @@
             @media (max-width: 1920px) {
                 bottom: 370px;
             }
+            @media (max-width: 991px) {
+                position: relative;
+                right: unset;
+                bottom: unset;
+                z-index: 10;
+            }
         }
         .index-product-features {
             ul {
                 padding-left: 1rem;
+                @media (max-width: 991px) {
+                    padding-top: 30px;
+                    padding-left: 2rem;
+                    margin-bottom: 30px;
+                }
+	            @media (max-width: 575px) {
+                    li {
+                        font-size: 1.15rem;
+                    }
+                }
             }
             .basic-button {
                 width: 250px;
@@ -56,6 +127,23 @@
                 @media (max-width: 1920px) {
                     width: 220px;
                     height: 80px;
+                }
+                @media (max-width: 1799px) {
+                    width: 200px;
+                    height: 70px;
+                }
+                @media (max-width: 1399px) {
+                    width: 180px;
+                    height: 60px;
+                }
+                @media (max-width: 991px) {
+                    width: 160px;
+                    height: 45px;
+                }
+                @media (max-width: 575px) {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 1.15rem;
                 }
             }
         }
@@ -66,6 +154,10 @@
         padding-top: 12rem;
         padding-bottom: 4rem;
         color: $white;
+        @media (max-width: 575px) {
+            padding-top: 9rem;
+            padding-bottom: 3rem;
+        }
         .index-product-params-title {
             width: fit-content;
             font-family: "Manrope", sans-serif;
@@ -76,6 +168,11 @@
         }
         .index-product-params-tables {
             margin-top: 2rem;
+            .params-table-wrapper {
+                @media (max-width: 991px) {
+                    margin-bottom: 20px;
+                }
+            }
             .params-table-title {
                 display: block;
                 width: fit-content;
@@ -86,6 +183,38 @@
                 line-height: normal;
                 margin-bottom: 1rem;
                 pointer-events: none;
+                @media (max-width: 1399px) {
+                    margin-bottom: 0.5rem;
+                }
+                @media (max-width: 991px) {
+                    position: relative;
+                    pointer-events: unset;
+                    font-size: 1.3rem;
+                    width: 100%;
+                    border-bottom: 1px solid $white;
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 10px 15px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: 0.2s ease;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url("../img/arrow-solid.png");
+                        background-size: auto;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &[aria-expanded=true] {
+                        &::after {
+                            transform: translateY(-50%) rotate(-180deg);
+                            transition: 0.2s ease;
+                        }
+                    }
+                }
             }
             .params-table {
                 border-collapse: separate;
@@ -93,6 +222,19 @@
                 margin-left: -20px;
                 @media (max-width: 1920px) {
                     border-spacing: 15px;
+                }
+                @media (max-width: 1399px) {
+                    border-spacing: 10px;
+                    margin-left: -10px;
+                }
+                @media (max-width: 991px) {
+                    width: 100%;
+                    border-spacing: 30px 15px;
+                    margin-left: -30px;
+                }
+                @media (max-width: 575px) {
+                    border-spacing: 15px;
+                    margin-left: -10px;
                 }
                 td {
                     padding: 10px 15px;
@@ -103,6 +245,9 @@
                     @media (max-width: 1920px) {
                         font-size: 0.8rem;
                         padding: 10px 12px;
+                    }
+                    @media (max-width: 1399px) {
+                        padding: 10px;
                     }
                 }
             }

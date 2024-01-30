@@ -12,11 +12,30 @@
         h4 {
             top: unset;
             bottom: 35px;
+            @media (max-width: 575px) {
+                bottom: 15px;
+            }
         }
         .content-image {
             position: relative;
             overflow: hidden;
             margin-bottom: 1.5rem;
+        }
+    }
+    .index-service {
+        .index-card--text {
+            @media (max-width: 1399px) {
+                order: 1;
+            }
+        }
+        .index-card--pic:first-child {
+            order: 2;
+        }
+        .index-card--pic:nth-child(2) {
+            order: 3;
+        }
+        .index-card--pic:nth-child(3) {
+            order: 4;
         }
     }
 }

@@ -133,8 +133,11 @@ a {
 	font-weight: 700;
 	line-height: 0.8;
 	text-transform: uppercase;
+	@media (max-width: 1699px) {
+		font-size: 4rem;
+	}
 	@media (max-width: 575px) {
-		font-size: 1.7rem;
+		font-size: 2.6rem;
 	}
 }
 
