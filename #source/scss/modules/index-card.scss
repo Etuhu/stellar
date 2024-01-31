@@ -64,6 +64,11 @@
             width: 200px;
             margin-top: 0;
         }
+        @media (max-width: 991px) {
+            height: 60px;
+            font-size: 1.5rem;
+            width: 250px;
+        }
     }
 }
 

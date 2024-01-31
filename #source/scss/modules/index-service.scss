@@ -20,6 +20,9 @@
             position: relative;
             overflow: hidden;
             margin-bottom: 1.5rem;
+            @media (max-width: 991px) {
+                margin-bottom: 0;
+            }
         }
     }
     .index-service {
@@ -29,13 +32,24 @@
             }
         }
         .index-card--pic:first-child {
-            order: 2;
+            @media (max-width: 1399px) {
+                order: 2;
+            }
         }
         .index-card--pic:nth-child(2) {
-            order: 3;
+            @media (max-width: 1399px) {
+                order: 3;
+            }
         }
         .index-card--pic:nth-child(3) {
-            order: 4;
+            @media (max-width: 1399px) {
+                order: 4;
+            }
+        }
+        .content-description {
+            @media (max-width: 991px) {
+                display: none;
+            }
         }
     }
 }

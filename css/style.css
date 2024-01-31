@@ -367,13 +367,13 @@ template {
 
 html,
 body {
-  height: 100%;
   scroll-behavior: smooth;
 }
 
 html {
   overflow-x: hidden;
   font-size: 14px;
+  height: 100%;
 }
 @media (min-width: 768px) {
   html {
@@ -490,6 +490,7 @@ a {
 }
 
 .index-page {
+  overflow: hidden;
   padding-bottom: 100px;
 }
 @media (max-width: 767px) {
@@ -613,6 +614,13 @@ a {
   background-size: cover;
   transition: 0.2s ease;
 }
+@media (max-width: 1699px) {
+  .basic-button--arrow::after {
+    width: 12px;
+    height: 25px;
+    margin-left: 15px;
+  }
+}
 .basic-button--arrow:hover::after {
   transform: translateX(5px);
   transition: 0.2s ease;
@@ -653,17 +661,11 @@ a {
     right: 25px;
   }
 }
-@media (max-width: 991px) {
-  .top-scroll-button {
-    border-radius: 15px;
-  }
-}
 @media (max-width: 767px) {
   .top-scroll-button {
     width: 40px;
     height: 40px;
     font-size: 1.3rem;
-    border-radius: 15px;
   }
 }
 @media (max-width: 575px) {
@@ -672,7 +674,6 @@ a {
     right: 8px;
     width: 40px;
     height: 40px;
-    border-radius: 12px;
   }
 }
 @media (max-width: 399px) {
@@ -1522,6 +1523,9 @@ a {
   object-fit: cover;
 }
 
+.index-about {
+  padding-top: 3rem;
+}
 @media (max-width: 767px) {
   .index-about {
     padding-top: 35px;
@@ -1532,7 +1536,7 @@ a {
 }
 
 .index-about-features {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 @media (max-width: 1920px) {
   .index-about-features {
@@ -1658,9 +1662,6 @@ a {
   }
 }
 
-.index-product {
-  overflow: hidden;
-}
 .index-product .index-product-info {
   position: relative;
   margin-top: -720px;
@@ -2058,6 +2059,13 @@ a {
     margin-top: 0;
   }
 }
+@media (max-width: 991px) {
+  .index-card--text .basic-button {
+    height: 60px;
+    font-size: 1.5rem;
+    width: 250px;
+  }
+}
 
 .index-card--pic {
   margin-bottom: 30px;
@@ -2151,19 +2159,35 @@ a {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 991px) {
+  .index-service-wrapper .index-card--pic .content-image {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 1399px) {
   .index-service-wrapper .index-service .index-card--text {
     order: 1;
   }
 }
-.index-service-wrapper .index-service .index-card--pic:first-child {
-  order: 2;
+@media (max-width: 1399px) {
+  .index-service-wrapper .index-service .index-card--pic:first-child {
+    order: 2;
+  }
 }
-.index-service-wrapper .index-service .index-card--pic:nth-child(2) {
-  order: 3;
+@media (max-width: 1399px) {
+  .index-service-wrapper .index-service .index-card--pic:nth-child(2) {
+    order: 3;
+  }
 }
-.index-service-wrapper .index-service .index-card--pic:nth-child(3) {
-  order: 4;
+@media (max-width: 1399px) {
+  .index-service-wrapper .index-service .index-card--pic:nth-child(3) {
+    order: 4;
+  }
+}
+@media (max-width: 991px) {
+  .index-service-wrapper .index-service .content-description {
+    display: none;
+  }
 }
 
 .index-form-wrapper .content {
@@ -2172,10 +2196,25 @@ a {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 991px) {
+  .index-form-wrapper .content {
+    background-image: url("../img/bottom-form-bg-mobile.jpg");
+  }
+}
 .index-form-wrapper .content .index-form-content {
   padding-top: 6rem;
   padding-bottom: 4rem;
   color: #FDFDFF;
+}
+@media (max-width: 1399px) {
+  .index-form-wrapper .content .index-form-content {
+    padding: 4rem 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .index-form-wrapper .content .index-form-content {
+    padding: 3rem 2rem;
+  }
 }
 .index-form-wrapper .content .index-form-content .basic-title {
   font-family: "Affect", sans-serif;
@@ -2215,6 +2254,33 @@ a {
     height: 80px;
   }
 }
+@media (max-width: 1699px) {
+  .index-form-wrapper .content form input[type=text],
+  .index-form-wrapper .content form input[type=tel],
+  .index-form-wrapper .content form input[type=email],
+  .index-form-wrapper .content form select,
+  .index-form-wrapper .content form textarea {
+    height: 70px;
+  }
+}
+@media (max-width: 1499px) {
+  .index-form-wrapper .content form input[type=text],
+  .index-form-wrapper .content form input[type=tel],
+  .index-form-wrapper .content form input[type=email],
+  .index-form-wrapper .content form select,
+  .index-form-wrapper .content form textarea {
+    height: 65px;
+  }
+}
+@media (max-width: 991px) {
+  .index-form-wrapper .content form input[type=text],
+  .index-form-wrapper .content form input[type=tel],
+  .index-form-wrapper .content form input[type=email],
+  .index-form-wrapper .content form select,
+  .index-form-wrapper .content form textarea {
+    font-size: 1.3rem;
+  }
+}
 .index-form-wrapper .content form input[type=text]:focus,
 .index-form-wrapper .content form input[type=tel]:focus,
 .index-form-wrapper .content form input[type=email]:focus,
@@ -2224,6 +2290,16 @@ a {
   outline: unset;
   box-shadow: unset;
   transition: 0.2s ease;
+}
+@media (max-width: 1399px) {
+  .index-form-wrapper .content form .input-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .index-form-wrapper .content form .input-wrapper {
+    margin-bottom: 10px;
+  }
 }
 .index-form-wrapper .content form .agree-wrapper {
   margin-top: 1.5rem;
@@ -2244,6 +2320,7 @@ a {
 }
 .index-form-wrapper .content form .agree-wrapper .wpcf7-list-item > label a:hover {
   color: #e31e24;
+  border-bottom: 1px solid #e31e24;
 }
 .index-form-wrapper .content form .agree-wrapper input[type=checkbox] {
   margin-right: 15px;
@@ -2269,6 +2346,12 @@ a {
     height: 25px;
   }
 }
+@media (max-width: 1699px) {
+  .index-form-wrapper .content form .agree-wrapper input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+}
 .index-form-wrapper .content form .agree-wrapper input[type=checkbox]:checked {
   background-image: url(../img/checkbox.png);
   background-repeat: no-repeat;
@@ -2292,6 +2375,27 @@ a {
     height: 80px;
   }
 }
+@media (max-width: 1699px) {
+  .index-form-wrapper .content form .basic-button {
+    height: 70px;
+  }
+}
+@media (max-width: 1499px) {
+  .index-form-wrapper .content form .basic-button {
+    height: 65px;
+  }
+}
+@media (max-width: 991px) {
+  .index-form-wrapper .content form .basic-button {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .index-form-wrapper .content form .basic-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 .index-form-wrapper .content form button[type=submit] {
   border: 0;
   box-shadow: unset;
@@ -2313,17 +2417,37 @@ a {
   font-size: 0.7rem;
 }
 
+@media (max-width: 991px) {
+  .footer-menu {
+    margin-bottom: 30px;
+  }
+}
 .footer-menu nav > ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 @media (max-width: 2099px) {
   .footer-menu nav > ul {
     gap: 20px;
   }
+}
+@media (max-width: 991px) {
+  .footer-menu nav > ul {
+    gap: 5px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-menu nav > ul {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
+.footer-menu .menu-item {
+  line-height: 1;
 }
 .footer-menu .menu-item a {
   color: #202122;
@@ -2334,6 +2458,16 @@ a {
 @media (max-width: 1920px) {
   .footer-menu .menu-item a {
     font-size: 0.6rem;
+  }
+}
+@media (max-width: 991px) {
+  .footer-menu .menu-item a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .footer-menu .menu-item a {
+    font-size: 0.9rem;
   }
 }
 .footer-menu .menu-item a:hover {
@@ -2354,8 +2488,24 @@ footer .social-content {
     gap: 25px;
   }
 }
+@media (max-width: 1799px) {
+  footer .social-content {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  footer .social-content {
+    justify-content: flex-start;
+  }
+}
 footer .social-content .social-item > img {
   transition: 0.2s ease;
+}
+@media (max-width: 1799px) {
+  footer .social-content .social-item > img {
+    width: 35px;
+    height: 35px;
+  }
 }
 footer .social-content .social-item:hover > img {
   transform: scale(1.05);
