@@ -120,7 +120,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	}
   })
-// new Swiper(".features-swiper", indexSliderParams);
+
+
+  new Swiper(".product-gallery-swiper", {
+	slidesPerView: 2.3,
+	speed: 500,
+	grabCursor: true,
+	simulateTouch: true,
+	spaceBetween: 30,
+	watchOverflow: true,
+	touchReleaseOnEdges: true,
+	navigation: {},
+	pagination: {},
+	breakpoints: {
+		300: {
+		  spaceBetween: 10,
+		  slidesPerView: 1,
+		},
+		576: {
+			slidesPerView: 2.3,
+		},
+		1200: {
+		  spaceBetween: 30,
+		},
+	}
+  });
 
 
 

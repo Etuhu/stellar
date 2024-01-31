@@ -143,6 +143,23 @@ a {
 	}
 }
 
+.inner-page-title {
+	font-size: 4rem;
+	@media (max-width: 1699px) {
+		font-size: 3.5rem;
+	}
+}
+
+
+.redline-title {
+	width: fit-content;
+	font-family: "Manrope", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 800;
+	border-bottom: 4px solid $red;
+	padding-bottom: 7px;
+}
+
 .basic-link {
 	font-weight: 300;
 	font-size: 0.8rem;

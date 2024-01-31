@@ -149,106 +149,106 @@
         }
 
     }
-    .index-product-params {
-        background-image: linear-gradient(0deg, #202122 18.39%, #2F373F 100%);
-        padding-top: 12rem;
-        padding-bottom: 4rem;
-        color: $white;
-        @media (max-width: 575px) {
-            padding-top: 9rem;
-            padding-bottom: 3rem;
+}
+.index-product-params {
+    background-image: linear-gradient(0deg, #202122 18.39%, #2F373F 100%);
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    color: $white;
+    @media (max-width: 575px) {
+        padding-top: 9rem;
+        padding-bottom: 3rem;
+    }
+    .index-product-params-title {
+        width: fit-content;
+        font-family: "Manrope", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        border-bottom: 4px solid $red;
+        padding-bottom: 7px;
+    }
+    .index-product-params-tables {
+        margin-top: 2rem;
+        .params-table-wrapper {
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+            }
         }
-        .index-product-params-title {
+        .params-table-title {
+            display: block;
             width: fit-content;
+            color: $white;
             font-family: "Manrope", sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            border-bottom: 4px solid $red;
-            padding-bottom: 7px;
-        }
-        .index-product-params-tables {
-            margin-top: 2rem;
-            .params-table-wrapper {
-                @media (max-width: 991px) {
-                    margin-bottom: 20px;
-                }
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 1rem;
+            pointer-events: none;
+            @media (max-width: 1399px) {
+                margin-bottom: 0.5rem;
             }
-            .params-table-title {
-                display: block;
-                width: fit-content;
-                color: $white;
-                font-family: "Manrope", sans-serif;
-                font-size: 1rem;
-                font-weight: 700;
-                line-height: normal;
-                margin-bottom: 1rem;
-                pointer-events: none;
-                @media (max-width: 1399px) {
-                    margin-bottom: 0.5rem;
+            @media (max-width: 991px) {
+                position: relative;
+                pointer-events: unset;
+                font-size: 1.3rem;
+                width: 100%;
+                border-bottom: 1px solid $white;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 10px 15px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: 0.2s ease;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url("../img/arrow-solid.png");
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
                 }
-                @media (max-width: 991px) {
-                    position: relative;
-                    pointer-events: unset;
-                    font-size: 1.3rem;
-                    width: 100%;
-                    border-bottom: 1px solid $white;
-                    background: rgba(255, 255, 255, 0.1);
-                    padding: 10px 15px;
+                &[aria-expanded=true] {
                     &::after {
-                        content: "";
-                        position: absolute;
-                        right: 15px;
-                        top: 50%;
-                        transform: translateY(-50%);
+                        transform: translateY(-50%) rotate(-180deg);
                         transition: 0.2s ease;
-                        width: 16px;
-                        height: 16px;
-                        background-image: url("../img/arrow-solid.png");
-                        background-size: auto;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                    &[aria-expanded=true] {
-                        &::after {
-                            transform: translateY(-50%) rotate(-180deg);
-                            transition: 0.2s ease;
-                        }
                     }
                 }
             }
-            .params-table {
-                border-collapse: separate;
-                border-spacing: 20px 15px;
-                margin-left: -20px;
+        }
+        .params-table {
+            border-collapse: separate;
+            border-spacing: 20px 15px;
+            margin-left: -20px;
+            @media (max-width: 1920px) {
+                border-spacing: 15px;
+            }
+            @media (max-width: 1399px) {
+                border-spacing: 10px;
+                margin-left: -10px;
+            }
+            @media (max-width: 991px) {
+                width: 100%;
+                border-spacing: 30px 15px;
+                margin-left: -30px;
+            }
+            @media (max-width: 575px) {
+                border-spacing: 15px;
+                margin-left: -10px;
+            }
+            td {
+                padding: 10px 15px;
+                border: 1px solid #7A7C80;
+                font-family: "Manrope", sans-serif;
+                font-size: 0.85rem;
+                font-weight: 500;
                 @media (max-width: 1920px) {
-                    border-spacing: 15px;
+                    font-size: 0.8rem;
+                    padding: 10px 12px;
                 }
                 @media (max-width: 1399px) {
-                    border-spacing: 10px;
-                    margin-left: -10px;
-                }
-                @media (max-width: 991px) {
-                    width: 100%;
-                    border-spacing: 30px 15px;
-                    margin-left: -30px;
-                }
-                @media (max-width: 575px) {
-                    border-spacing: 15px;
-                    margin-left: -10px;
-                }
-                td {
-                    padding: 10px 15px;
-                    border: 1px solid #7A7C80;
-                    font-family: "Manrope", sans-serif;
-                    font-size: 0.85rem;
-                    font-weight: 500;
-                    @media (max-width: 1920px) {
-                        font-size: 0.8rem;
-                        padding: 10px 12px;
-                    }
-                    @media (max-width: 1399px) {
-                        padding: 10px;
-                    }
+                    padding: 10px;
                 }
             }
         }
