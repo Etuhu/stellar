@@ -31,29 +31,29 @@
             align-items: flex-end;
         }
     }
-    .double-title {
-        font-family: "Affect", sans-serif;
-        font-size: 2.67rem;
-        font-weight: 300;
-        line-height: 0.8;
-        @media (max-width: 1499px) {
-            font-size: 2.2rem;
-        }
-        @media (max-width: 1399px) {
-            margin-bottom: 0;
-        }
-        @media (max-width: 575px) {
-            margin-right: 15px;
-        }
-        span {
-            display: block;
-            font-size: 4.5rem;
-            font-weight: 700;
-            @media (max-width: 575px) {
-                font-size: 3.5rem;
-            }
-        }
-    }
+    // .double-title {
+    //     font-family: "Affect", sans-serif;
+    //     font-size: 2.67rem;
+    //     font-weight: 300;
+    //     line-height: 0.8;
+    //     @media (max-width: 1499px) {
+    //         font-size: 2.2rem;
+    //     }
+    //     @media (max-width: 1399px) {
+    //         margin-bottom: 0;
+    //     }
+    //     @media (max-width: 575px) {
+    //         margin-right: 15px;
+    //     }
+    //     span {
+    //         display: block;
+    //         font-size: 4.5rem;
+    //         font-weight: 700;
+    //         @media (max-width: 575px) {
+    //             font-size: 3.5rem;
+    //         }
+    //     }
+    // }
     .basic-button {
         width: 250px;
         margin-top: 5rem;

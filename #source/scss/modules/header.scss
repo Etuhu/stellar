@@ -308,6 +308,53 @@
 	}
 }
 
+.header--inner {
+	padding-top: 30px;
+	padding-bottom: 35px;
+	.header-wrapper .top-menu-wrapper .navbar-site .navbar-nav {
+		justify-content: flex-start;
+		gap: 80px;
+		@media (max-width: 1699px) {
+			gap: 50px;
+		}
+		@media (max-width: 1399px) {
+			gap: 30px;
+		}
+		@media (max-width: 991px) {
+			gap: 0;
+		}
+	}
+	.header-wrapper .logo-wrapper {
+		text-align: right;
+		@media (max-width: 991px) {
+			text-align: left;
+		}
+		.logo {
+			@media (max-width: 2099px) {
+				width: 450px;
+			}
+			@media (max-width: 1920px) {
+				width: 380px;
+			}
+			@media (max-width: 1799px) {
+				width: 300px;
+			}
+			@media (max-width: 1599px) {
+				width: 250px;
+			}
+			@media (max-width: 1199px) {
+				width: 220px;
+			}
+			@media (max-width: 991px) {
+				width: 250px;
+			}
+			@media (max-width: 575px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
 
 
 .header--absolute {
